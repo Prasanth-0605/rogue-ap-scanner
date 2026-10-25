@@ -1,0 +1,17 @@
+[Unit]
+Description=RogueAPHunter Rogue Wi-Fi Access Point Detector
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/raphunter --once
+# Run as root to allow iw scanning
+User=root
+Group=root
+Restart=no
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
