@@ -5,7 +5,7 @@ RogueAPHunter is a Linux CLI tool for detecting rogue Wi-Fi access points. It sc
 ## Install
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/Prasanth-0605/rogue-ap-scanner
 cd rouge-access-point
 sudo pip3 install .
 ```
